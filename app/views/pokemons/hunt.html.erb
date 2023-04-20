@@ -1,0 +1,14 @@
+<h1>You have found a Pokemon!</h1>
+
+<h2><%= @randomPokemon.name.capitalize %></h2>
+<img src=<%=@randomPokemon.sprites.front_default %> alt="No image available">
+
+<h3>Types</h3>
+<ul>
+	<% @randomPokemon.types.each do |a| %>
+		<li><%= a.type.name.capitalize %></li>
+	<% end %>
+</ul>
+
+<%= link_to "Capture", capture_pokemon_path(@randomPokemon) %>
+<button>Maybe later...</button>

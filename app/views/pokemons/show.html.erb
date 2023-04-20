@@ -1,0 +1,14 @@
+<h1><%= @pokemon.name.capitalize %></h1>
+
+<img src=<%= @pokemon.image%> alt="Pokemon Image">
+
+<h2>Type</h2>
+<ul>
+	<% @pokemon.pokemon_types.each do |type| %>
+		<li>
+			<%= type.name.capitalize %>
+		</li>
+	<% end %>
+</ul>
+
+<a href="/">Home</a>
