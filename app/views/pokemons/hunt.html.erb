@@ -5,10 +5,19 @@
 
 <h3>Types</h3>
 <ul>
-	<% @randomPokemon.types.each do |a| %>
-		<li><%= a.type.name.capitalize %></li>
+	<% @types.each do |type| %>
+		<li><%= type.capitalize %></li>
 	<% end %>
 </ul>
 
-<%= link_to "Capture", capture_pokemon_path(@randomPokemon) %>
-<button>Maybe later...</button>
+<%= button_to "Catch",
+		capture_path,
+		method: :put,
+		params: [
+			name: @randomPokemon.name,
+			api_id: @randomPokemon.id,
+			image: @randomPokemon.sprites.front_default,
+			types: @types
+		] %>
+
+<a href="/">Maybe later...</a>

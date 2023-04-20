@@ -5,8 +5,10 @@
     <li>
       <a href="/pokemons/<%= pokemon.id %>">
         <%= pokemon.name.capitalize %>
+        <img src=<%= pokemon.image%> alt="Pokemon Image">
       </a>
-      <img src=<%= pokemon.image%> alt="Pokemon Image">
     </li>
   <% end %>
 </ul>
+
+<%= link_to "Go Hunting", hunt_path %>

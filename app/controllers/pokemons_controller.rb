@@ -15,9 +15,24 @@ class PokemonsController < ApplicationController
     end
 
     @randomPokemon = PokeApi.get(pokemon: @randomId)
+    @types = []
+    @randomPokemon.types.each do |a|
+      @types.append(a.type.name)
+    end
   end
 
   def capture
-    @dice = rand(1...3)
+    p = Pokemon.create(name: params[:name], api_id: params[:api_id], image: params[:image])
+
+    params[:types].each do |type|
+      existingType = PokemonType.find_by(name: type)
+      if existingType != nil
+        p.pokemon_types << existingType
+      else
+        p.pokemon_types.create(name: type)
+      end
+    end
+
+    redirect_to root_path
   end
 end

@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   root "pokemons#index"
   resources :pokemons
 
-  get "/hunt", to: "pokemons#hunt"
-  get "/capture", to: "pokemons#capture"
+  get "hunt", to: "pokemons#hunt"
+  put "capture", to: "pokemons#capture"
 end
