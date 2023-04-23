@@ -2,6 +2,7 @@
 
 <body>
 	<h1>You have found a Pokemon!</h1>
+	<a href="/berries"><%= @berries %> 🫐</a>
 
 	<h2 class="h2-hunt"><%= @randomPokemon.name.capitalize %></h2>
 	<img src=<%=@randomPokemon.sprites.front_default%> alt="No image available", class="pokemon-image">
@@ -15,8 +16,9 @@
 		<% end %>
 	</ul>
 	
-	<%= button_to "Catch",
+	<%= button_to "Catch ( 15🫐 )",
 		capture_path,
+		:disabled => !@can_catch,
 		method: :put,
 		params: [
 			name: @randomPokemon.name,
