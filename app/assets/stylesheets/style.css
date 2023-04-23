@@ -1,0 +1,127 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+h1 {
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+.pokemon {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+.pokemon-image-container{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.pokemon-list-item{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.hunt-button{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Pokemon Solid', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pokemon-image{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.types-header{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Pokemon Solid', sans-serif;
+    margin: 10px;
+}
+
+.types-list{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+.home-button{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Pokemon Solid', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h2-hunt{
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+.catch-button{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Pokemon Solid', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catch-button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.home-button:hover{
+    background-color: red;
+    color: #fff;
+    border: red;
+}
+
+.hunt-button:hover{
+    background-color: #000;
+    color: #fff;
+}

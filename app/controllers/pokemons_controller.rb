@@ -24,15 +24,6 @@ class PokemonsController < ApplicationController
   def capture
     p = Pokemon.create(name: params[:name], api_id: params[:api_id], image: params[:image])
 
-    params[:types].each do |type|
-      existingType = PokemonType.find_by(name: type)
-      if existingType != nil
-        p.pokemon_types << existingType
-      else
-        p.pokemon_types.create(name: type)
-      end
-    end
-
-    redirect_to root_path
+    redirect_to create_pokemon_types_path(p.id, types: params[:types])
   end
 end

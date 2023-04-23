@@ -1,14 +1,19 @@
-<h1>Your Pokemons</h1>
+<%= stylesheet_link_tag 'style.css' %>
 
-<ul>
-  <% @pokemons.each do |pokemon| %>
-    <li>
-      <a href="/pokemons/<%= pokemon.id %>">
-        <%= pokemon.name.capitalize %>
-        <img src=<%= pokemon.image%> alt="Pokemon Image">
-      </a>
-    </li>
-  <% end %>
-</ul>
+<body>
+  <h1>Your Pokemons</h1>
 
-<%= link_to "Go Hunting", hunt_path %>
+  <%= button_to "Go Hunting", hunt_path, method: :get, class: "hunt-button" %>
+
+  <ul>
+    <% @pokemons.each do |pokemon| %>
+      <li class="pokemon-list-item">
+        <a href="/pokemons/<%= pokemon.id %>" class="pokemon">
+          <%= pokemon.name.capitalize %>
+          <img src=<%= pokemon.image%> alt="Pokemon Image", class="pokemon-image-container">
+        </a>
+      </li>
+    <% end %>
+  </ul>
+
+</body>

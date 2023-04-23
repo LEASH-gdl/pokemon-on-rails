@@ -1,16 +1,21 @@
-<h1>You have found a Pokemon!</h1>
+<%= stylesheet_link_tag 'style.css' %>
 
-<h2><%= @randomPokemon.name.capitalize %></h2>
-<img src=<%=@randomPokemon.sprites.front_default %> alt="No image available">
+<body>
+	<h1>You have found a Pokemon!</h1>
 
-<h3>Types</h3>
-<ul>
-	<% @types.each do |type| %>
-		<li><%= type.capitalize %></li>
-	<% end %>
-</ul>
+	<h2 class="h2-hunt"><%= @randomPokemon.name.capitalize %></h2>
+	<img src=<%=@randomPokemon.sprites.front_default%> alt="No image available", class="pokemon-image">
 
-<%= button_to "Catch",
+	<h3 class="types-header">Types</h3>
+	<ul>
+		<% @types.each do |type| %>
+			<li class="types-list">
+				<%= type.capitalize %>
+			</li>
+		<% end %>
+	</ul>
+	
+	<%= button_to "Catch",
 		capture_path,
 		method: :put,
 		params: [
@@ -18,6 +23,7 @@
 			api_id: @randomPokemon.id,
 			image: @randomPokemon.sprites.front_default,
 			types: @types
-		] %>
+		], class: "catch-button" %>
 
-<a href="/">Maybe later...</a>
+	<button class="home-button" onclick="window.location.href='/';">Maybe later...</button>
+</body>

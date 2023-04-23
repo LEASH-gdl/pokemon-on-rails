@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   get "hunt", to: "pokemons#hunt"
   put "capture", to: "pokemons#capture"
+  get "create_pokemon_types/:id", to: "pokemon_types#create", as: "create_pokemon_types"
 end

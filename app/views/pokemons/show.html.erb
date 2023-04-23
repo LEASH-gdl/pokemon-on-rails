@@ -1,14 +1,18 @@
-<h1><%= @pokemon.name.capitalize %></h1>
+<%= stylesheet_link_tag 'style.css' %>
 
-<img src=<%= @pokemon.image%> alt="No image available">
+<body>	
+	<h1><%= @pokemon.name.capitalize %></h1>
 
-<h2>Type</h2>
-<ul>
-	<% @pokemon.pokemon_types.each do |type| %>
-		<li>
-			<%= type.name.capitalize %>
-		</li>
-	<% end %>
-</ul>
+	<img src=<%= @pokemon.image%> alt="No image available", class="pokemon-image">
 
-<a href="/">Home</a>
+	<h2 class="types-header">Types</h2>
+	<ul>
+		<% @pokemon.pokemon_types.each do |type| %>
+			<li class="types-list">
+				<%= type.name.capitalize %>
+			</li>
+		<% end %>
+	</ul>
+
+	<button class="home-button" onclick="window.location.href='/';">HOME</button>
+</body>
