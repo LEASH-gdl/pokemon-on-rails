@@ -1,6 +1,7 @@
 class PokemonsController < ApplicationController
   def index
     @pokemons = Pokemon.all
+    @berries = Item.find_by(name: "berries").amount
   end
 
   def show

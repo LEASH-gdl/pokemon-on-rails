@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   get "hunt", to: "pokemons#hunt"
   put "capture", to: "pokemons#capture"
+
+  get "berries", to: "berries#index"
 end
