@@ -1,1 +1,13 @@
 <h1>Berries</h1>
+<p>You currently have <%= @berries %> 🫐</p>
+<br>
+<p>
+Berries are used to catch Pokemons. You may try your luck and get some extra ones!
+Note that sometimes you may get none.
+</p>
+
+<%= button_to "Try your luck!",
+		berries_new_path,
+		method: :put %>
+		
+<%= link_to "Home", root_path %>

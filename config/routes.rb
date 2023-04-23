@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   put "capture", to: "pokemons#capture"
 
   get "berries", to: "berries#index"
+  put "berries/new", to: "berries#new"
 end
