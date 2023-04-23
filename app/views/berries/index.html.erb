@@ -1,5 +1,5 @@
 <h1>Berries</h1>
-<p>You currently have <%= @berries %> 🫐</p>
+<p><b>You currently have <%= @berries %> 🫐</b></p>
 <br>
 <p>
 Berries are used to catch Pokemons. You may try your luck and get some extra ones!
@@ -8,6 +8,7 @@ Note that sometimes you may get none.
 
 <%= button_to "Try your luck!",
 		berries_new_path,
+		class: "berries-lottery-button",
 		method: :put %>
 		
-<%= link_to "Home", root_path %>
+<button class="home-button" onclick="window.location.href='/';">HOME</button>

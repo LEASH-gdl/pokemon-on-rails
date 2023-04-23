@@ -2,11 +2,12 @@
 
 <body>
   <h1>Your Pokemons</h1>
-	<a href="/berries"><%= @berries %> 🫐</a>
+  
+	<%= button_to @berries.to_s + " 🫐", berries_path, method: :get, class: "berries-button" %>
 
   <%= button_to "Go Hunting", hunt_path, method: :get, class: "hunt-button" %>
 
-  <ul>
+  <ul class="pokemons-container">
     <% @pokemons.each do |pokemon| %>
       <li class="pokemon-list-item">
         <a href="/pokemons/<%= pokemon.id %>" class="pokemon">
