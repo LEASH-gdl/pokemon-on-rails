@@ -10,6 +10,11 @@ h1 {
 
 body{
     background-color: #f5f5f5;
+    padding: 10px 80px;
+}
+
+.pokemons-container {
+    padding: 0;
 }
 
 .pokemon {
@@ -70,6 +75,11 @@ body{
     margin: 10px;
 }
 
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+}
+
 .types-list{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
@@ -110,7 +120,7 @@ body{
     margin-right: auto;
 }
 
-.catch-button:hover{
+.catch-button:enabled:hover{
     background-color: #000;
     color: #fff;
 }
@@ -124,4 +134,44 @@ body{
 .hunt-button:hover{
     background-color: #000;
     color: #fff;
+}
+
+.berries-button {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Pokemon Solid', sans-serif;
+  display: block;
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+.berries-button:hover {
+  background-color: #ff9100;
+  color: #fff;
+  border: none;
+}
+
+.berries-lottery-button {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Pokemon Solid', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.berries-lottery-button:hover {
+  background-color: #ff9100;
+  color: #fff;
+  border: none;
 }
