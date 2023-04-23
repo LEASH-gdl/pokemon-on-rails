@@ -1,0 +1,511 @@
+{
+  "RSpec": {
+    "coverage": {
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/spec/controllers/pokemon_controller_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          6,
+          2,
+          null,
+          12,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          1,
+          4,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          4,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          5,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/spec/rails_helper.rb": {
+        "lines": [
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/environment.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          null,
+          1
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/application.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/boot.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/environments/test.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/initializers/assets.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/initializers/content_security_policy.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/initializers/permissions_policy.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/spec/factories/pokemon.rb": {
+        "lines": [
+          1,
+          1,
+          9,
+          9,
+          9,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/spec/factories/pokemon_type.rb": {
+        "lines": [
+          1,
+          1,
+          5,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/config/routes.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/app/helpers/pokemon_types_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/app/helpers/pokemons_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/app/controllers/pokemons_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          4,
+          null,
+          null,
+          1,
+          5,
+          5,
+          5,
+          null,
+          null,
+          5,
+          5,
+          5,
+          6,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/spec/controllers/pokemon_type_controller.spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          4,
+          4,
+          null,
+          4,
+          null,
+          1,
+          4,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/app/controllers/pokemon_types_controller.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          4,
+          7,
+          7,
+          4,
+          null,
+          3,
+          null,
+          null,
+          null,
+          4,
+          null,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/app/models/pokemon.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "C:/Users/luisa/Documents/Documents/Education/Tec/Development/Ruby/pokemon-on-rails/app/models/pokemon_type.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      }
+    },
+    "timestamp": 1682225746
+  }
+}

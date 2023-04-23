@@ -8,7 +8,6 @@ class PokemonsController < ApplicationController
   end
 
   def hunt
-
     loop do
       @randomId = rand(1...1010)
       break if Pokemon.find_by(api_id: @randomId) == nil
