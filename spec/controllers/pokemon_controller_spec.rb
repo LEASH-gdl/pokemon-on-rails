@@ -28,6 +28,22 @@ RSpec.describe PokemonsController, type: :controller do
         end
 
         it_behaves_like 'render template and assigns'
+
+        it 'assigns @berries' do
+            expect(assigns(:berries)).to be_a(Integer)
+        end
+
+        it 'assigns @berries to 0' do
+            expect(assigns(:berries)).to eq(0)
+        end
+    end
+
+    describe "GET #index with berries" do
+        it "assigns @berries to 15" do
+            item = FactoryBot.create(:item)
+            get :index
+            expect(assigns(:berries)).to eq(item.amount)
+        end
     end
 
     describe "GET #show" do
@@ -45,13 +61,16 @@ RSpec.describe PokemonsController, type: :controller do
     end
 
     describe "GET #hunt" do
-        subject { get :hunt }
         let (:assigned_var) { assigns(:randomPokemon) }
         let (:expected_value) { be_a(PokeApi::Pokemon) }
         let (:template) { 'hunt' }
+
+        before do
+            FactoryBot.create(:item)
+            get :hunt
+        end
         
         it "returns a success response" do
-            get :hunt
             expect(response).to be_successful
         end
 
@@ -60,10 +79,20 @@ RSpec.describe PokemonsController, type: :controller do
         it 'assigns @types' do
             expect(assigns(:types)).to be_a(Array)
         end
+
+        it 'assigns @berries to 15' do
+            expect(assigns(:berries)).to be(15)
+        end
+
+        it 'assigns @can_catch' do
+            expect(assigns(:can_catch)).to be(true)
+        end
     end
 
     describe "PUT #capture" do
-        subject { put :capture, params: { name: pokemon.name, api_id: pokemon.api_id, image: pokemon.image, types: [pokemon_type.name] } }
+        before do
+            FactoryBot.create(:item)
+        end
         
         it "returns a success response" do
             put :capture, params: { name: pokemon.name, api_id: pokemon.api_id, image: pokemon.image, types: [pokemon_type.name] }

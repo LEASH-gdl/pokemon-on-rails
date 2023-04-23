@@ -5,10 +5,11 @@ class BerriesController < ApplicationController
   end
 
   def new
-    lotteryOptions = [0, 0, 0, 1, 1, 2, 2, 5, 10, 15]
-    berries = Item.find_by(name: "berries")
-    berries.amount += lotteryOptions.sample
-    berries.save
+    @lotteryOptions = [0, 0, 0, 1, 1, 2, 2, 5, 10, 15]
+    @berries = Item.find_by(name: "berries")
+    @numberChosen = @lotteryOptions.sample
+    @berries.amount += @numberChosen
+    @berries.save
 
     redirect_to :berries
   end

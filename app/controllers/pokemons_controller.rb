@@ -1,6 +1,11 @@
 class PokemonsController < ApplicationController
   def index
     @pokemons = Pokemon.all
+    
+    if Item.find_by(name: "berries") == nil
+      Item.create(name: "berries", amount: 0)
+    end
+
     @berries = Item.find_by(name: "berries").amount
   end
 
@@ -26,9 +31,9 @@ class PokemonsController < ApplicationController
 
   def capture
     p = Pokemon.create(name: params[:name], api_id: params[:api_id], image: params[:image])
-    berries = Item.find_by(name: "berries")
-    berries.amount -= 15;
-    berries.save
+    @berries = Item.find_by(name: "berries")
+    @berries.amount -= 15;
+    @berries.save
 
     redirect_to create_pokemon_types_path(p.id, types: params[:types])
   end
