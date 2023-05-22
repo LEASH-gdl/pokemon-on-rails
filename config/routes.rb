@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root "static_pages#home"
+  post "sign_up", to: "users#create"
+  get "sign_up", to: "users#new"
 
-  # Defines the root path route ("/")
-  root "pokemons#index"
   resources :pokemons
 
+  get "main", to: "pokemons#index"
   get "hunt", to: "pokemons#hunt"
   put "capture", to: "pokemons#capture"
   get "create_pokemon_types/:id", to: "pokemon_types#create", as: "create_pokemon_types"
