@@ -11,6 +11,6 @@ class PokemonTypesController < ApplicationController
             end
         end
 
-        redirect_to root_path
+        redirect_to main_path
     end
 end

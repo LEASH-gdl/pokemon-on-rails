@@ -1,12 +1,16 @@
 class PokemonsController < ApplicationController
   def index
-    @pokemons = Pokemon.all
+    @pokemons = Pokemon.where(user: @current_user)
+
+    if @pokemons == nil
+      @pokemons = []
+    end
     
-    if Item.find_by(name: "berries") == nil
-      Item.create(name: "berries", amount: 0)
+    if Item.find_by(name: "berries", user: @current_user) == nil
+      Item.create(name: "berries", amount: 0, user: @current_user)
     end
 
-    @berries = Item.find_by(name: "berries").amount
+    @berries = Item.find_by(name: "berries", user: @current_user).amount
   end
 
   def show
@@ -14,12 +18,12 @@ class PokemonsController < ApplicationController
   end
 
   def hunt
-    @berries = Item.find_by(name: "berries").amount
+    @berries = Item.find_by(name: "berries", user: @current_user).amount
     @can_catch = @berries >= 15
 
     loop do
       @randomId = rand(1...1010)
-      break if Pokemon.find_by(api_id: @randomId) == nil
+      break if Pokemon.find_by(api_id: @randomId, user: @current_user) == nil
     end
 
     @randomPokemon = PokeApi.get(pokemon: @randomId)
@@ -30,8 +34,8 @@ class PokemonsController < ApplicationController
   end
 
   def capture
-    p = Pokemon.create(name: params[:name], api_id: params[:api_id], image: params[:image])
-    @berries = Item.find_by(name: "berries")
+    p = Pokemon.create(name: params[:name], api_id: params[:api_id], image: params[:image], user: @current_user)
+    @berries = Item.find_by(name: "berries", user: @current_user)
     @berries.amount -= 15;
     @berries.save
 
