@@ -1,6 +1,6 @@
 class User < ApplicationRecord
     CONFIRMATION_TOKEN_EXPIRATION = 10.minutes
-    PASSWORD_REST_TOKEN_EXPIRATION = 10.minutes
+    PASSWORD_RESET_TOKEN_EXPIRATION = 10.minutes
     MAILER_FROM_EMAIL = "no-reply@example.com"
 
     has_secure_password
@@ -28,7 +28,7 @@ class User < ApplicationRecord
     end
 
     def generate_password_reset_token
-        signed_id expires_in: PASSWORD_REST_TOKEN_EXPIRATION, purpose: :reset_password
+        signed_id expires_in: PASSWORD_RESET_TOKEN_EXPIRATION, purpose: :reset_password
     end
 
     def generate_confirmation_token

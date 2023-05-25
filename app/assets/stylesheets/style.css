@@ -34,6 +34,8 @@ body{
     overflow: hidden; 
     transition: all 0.3s ease;
     font-family: 'Pokemon Solid', sans-serif;
+    text-decoration: none;
+    color: #000;
 }
 
 .pokemon-image-container{
@@ -149,9 +151,11 @@ p {
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'Pokemon Solid', sans-serif;
-  display: block;
   margin-right: auto;
   margin-left: 50px;
+  text-decoration: none;
+  color: #000;
+  display: block;
 }
 
 .berries-button:hover {
@@ -178,4 +182,94 @@ p {
   background-color: #ff9100;
   color: #fff;
   border: none;
+}
+
+.logout-button{
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Pokemon Solid', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.logout-button:hover{
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+
+.login-button{
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Pokemon Solid', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+  font-size: 20px;
+}
+
+.sign-up-button{
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Pokemon Solid', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+  width: 50%;
+  font-size: 20px;
+}
+
+.form-control{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.form-label{
+  font-size: 20px;
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+.btn-forms{
+  font-size: 20px;
+  font-family: 'Pokemon Solid', sans-serif;
+}
+
+.password-reset{
+  font-size: 15px;
+  font-family: 'Pokemon Solid', sans-serif;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.back-home{
+  font-size: 15px;
+  font-family: 'Pokemon Solid', sans-serif;
+  display: block;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 15px;
 }
