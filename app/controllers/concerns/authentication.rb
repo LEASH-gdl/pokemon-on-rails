@@ -10,10 +10,12 @@ module Authentication
     def login(user)
       reset_session
       session[:current_user_id] = user.id
+      @current_user = user
     end
   
     def logout
       reset_session
+      @current_user = nil
     end
   
     def redirect_if_authenticated
