@@ -1,4 +1,7 @@
 class BerriesController < ApplicationController
+
+  before_action :authenticate_user!
+
   def index
     @berries = Item.find_by(name: "berries", user: @current_user).amount
   end
